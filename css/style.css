@@ -88,14 +88,26 @@ h6 {
   background: #DABD00;
 }
 
+/* SOBRE MI */
+
 .sobre-mi {
+  background: red;
+  width: 100vw;
   height: 90vh;
 }
 
-.sobre-mi__row {
-  height: 100%;
+/* PORTAFOLIO */
+
+.portafolio {
+  background: green;
+  width: 100vw;
+  height: 90vh;
 }
 
-.lead {
-  font-size: 1.3rem !important;
+/* CONTACTO */
+
+.contacto {
+  background: yellow;
+  width: 100vw;
+  height: 90vh;
 }
