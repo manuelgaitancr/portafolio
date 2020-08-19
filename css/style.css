@@ -1,0 +1,89 @@
+:root {
+  --navbar-bg-color: black;
+  --facebook-color: #1778F2;
+  --instagram-color: #CE3E73;
+  --twitter-color: #3AA1F2;
+  --linkedin-color: #1166C2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto',
+    sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+/* HEADER */
+
+.header {
+  -webkit-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
+}
+
+.mg__bg-black {
+  background: var(--navbar-bg-color);
+}
+
+.nav__link-facebook:hover {
+  color: var(--facebook-color) !important;
+}
+
+.nav__link-instagram:hover {
+  color: var(--instagram-color) !important;
+}
+
+.nav__link-twitter:hover {
+  color: var(--twitter-color) !important;
+}
+
+.nav__link-linkedin:hover {
+  color: var(--linkedin-color) !important;
+}
+
+/* BANNER */
+
+.hero {
+  width: 100%;
+  height: 500px;
+  background-image: url("../assets/img/ingmar-MIT0d2Y1Sd0-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__box-titles {
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 24, 31, 0.9);
+}
+
+.hero__titles {
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+
+.hero__btn {
+  border-radius: 0;
+  border: #FFDD00;
+  background: #FFDD00;
+}
+
+.hero__btn:hover {
+  border: #DABD00;
+  background: #DABD00;
+}
