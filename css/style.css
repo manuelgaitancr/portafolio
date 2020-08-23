@@ -23,9 +23,13 @@ body {
   flex-direction: column;
   font-family: 'Roboto',
     sans-serif;
-  font-size: 18px;
   font-weight: 400 !important;
   box-sizing: border-box;
+}
+
+body,
+.lead {
+  font-size: 18px !important;
 }
 
 main {
@@ -47,6 +51,7 @@ h6 {
   -webkit-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid var(--navbar-bg-color);
 }
 
 .mg__bg-black {
@@ -118,4 +123,55 @@ h6 {
 
 .footer__text-muted {
   color: #42484e;
+}
+
+.icon-arrow-up {
+  color: #68CD73;
+}
+
+#mic-init-access-tool .mic-access-tool-general-button {
+  box-shadow: 0px 2px 5px -1px black;
+}
+
+.subir {
+  position: fixed !important;
+  z-index: 9999 !important;
+  display: block !important;
+  bottom: 7px;
+  right: 7px;
+}
+
+.subir__btn {
+  background-color: #17384c;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  box-shadow: 0px 2px 5px -1px black;
+}
+
+.subir,
+.subir__btn {
+  width: 68px;
+  height: 68px;
+}
+
+.subir__btn:hover {
+  background-color: #FFFCCC;
+  border: 2px solid #8B221A;
+  color: #8B221A;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+
+  .subir,
+  .subir__btn {
+    width: 48px;
+    height: 48px;
+    padding: 1px;
+  }
+
+  .subir__p {
+    font-size: 10px !important;
+  }
 }
