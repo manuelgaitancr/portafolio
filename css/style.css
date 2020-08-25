@@ -45,6 +45,14 @@ h6 {
   font-weight: 400 !important;
 }
 
+small {
+  padding: 8px;
+}
+
+a:hover {
+  color: var(--navbar-bg-color);
+}
+
 /* HEADER */
 
 .header {
@@ -52,6 +60,19 @@ h6 {
   -moz-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
   border-bottom: 1px solid var(--navbar-bg-color);
+}
+
+.navbar-brand {
+  padding: 8px;
+}
+
+.navbar-brand a:focus,
+.hero__btn:focus,
+.carousel-control-prev:focus,
+.carousel-control-next:focus,
+input:focus,
+textarea:focus {
+  outline: medium solid #68CD73 !important;
 }
 
 .mg__bg-black {
@@ -92,6 +113,12 @@ h6 {
   background: var(--overlay-bg-color);
 }
 
+.hero__container-btn {
+  max-width: fit-content;
+  padding: 8px;
+  /* border: 1px solid red; */
+}
+
 .hero__btn {
   border-radius: 0;
   border: var(--btn-bg-color);
@@ -125,6 +152,14 @@ h6 {
   color: #42484e;
 }
 
+.container__brand {
+  background-color: red;
+}
+
+.footer__brand {
+  min-width: fit-content;
+}
+
 .icon-arrow-up {
   color: #68CD73;
 }
@@ -156,7 +191,8 @@ h6 {
   height: 68px;
 }
 
-.subir__btn:hover {
+.subir__btn:hover,
+.subir__btn:focus {
   background-color: #FFFCCC;
   border: 2px solid #8B221A;
   color: #8B221A;
