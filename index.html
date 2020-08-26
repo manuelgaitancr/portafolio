@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Verificación Etiqueta HTML -->
-  <!-- <meta name="google-site-verification" content="zRs7J8xQKaJrwW_qTcInB-KbmBg4WoVj_NbOi-lbHjc" /> -->
+  <meta name="google-site-verification" content="zRs7J8xQKaJrwW_qTcInB-KbmBg4WoVj_NbOi-lbHjc" />
 
   <!-- Primary Meta Tags -->
   <title>Manuel Gaitán | Desarrollador Web</title>
@@ -69,8 +69,8 @@
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166757926-1"></script> -->
-  <!-- <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166757926-1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -79,10 +79,10 @@
     gtag("js", new Date());
 
     gtag("config", "UA-166757926-1");
-  </script> -->
+  </script>
 
   <!-- Recaptcha -->
-  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR"></script> -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR"></script>
 </head>
 
 <body>
@@ -224,82 +224,89 @@
         <div class="row">
           <div class="col-12 offset-lg-2 col-lg-8">
             <div class="py-5">
-              <h2 class="text-center">Contacto</h2>
-              <p class="lead text-center">
-                Los campos con asteriscos (<span class="asterisco">*</span>) son obligatorios
-              </p>
-              <form class="needs-validation" novalidate>
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12 offset-lg-3 col-lg-6">
-                      <div class="form-group">
-                        <label for="name">Nombre <span class="asterisco">*</span></label>
-                        <input type="text" class="name form-control" id="name" name="name"
-                          placeholder="Aquí va tu nombre" required>
-                        <div class="valid-feedback">
-                          ¡Se ve bien!
-                        </div>
-                        <div class="invalid-feedback">
-                          Proporcione un nombre válido.
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="surname">Apellido <span class="asterisco">*</span></label>
-                        <input type="text" class="surname form-control" id="surname" name="surname"
-                          placeholder="Aquí va tu apellido" required>
-                        <div class="valid-feedback">
-                          ¡Se ve bien!
-                        </div>
-                        <div class="invalid-feedback">
-                          Proporcione un apellido válido.
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="email">Correo <span class="asterisco">*</span></label>
-                        <input type="email" class="email form-control" id="email" name="email"
-                          placeholder="Aquí va tu correo" required>
-                        <div class="valid-feedback">
-                          ¡Se ve bien!
-                        </div>
-                        <div class="invalid-feedback">
-                          Proporcione un correo válido.
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="message">Mensaje <span class="asterisco">*</span></label>
-                        <textarea class="form-control" id="message" rows="3" name="message"
-                          placeholder="Aquí va tu mensaje" required></textarea>
-                        <div class="valid-feedback">
-                          ¡Se ve bien!
-                        </div>
-                        <div class="invalid-feedback">
-                          Proporcione un mensaje.
-                        </div>
-                      </div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="policy" name="policy" value="ok" required>
-                        <label class="form-check-label" for="policy">Aceptas los términos y condiciones de uso <span
-                            class="asterisco">*</span></label>
-                        <div class="valid-feedback">
-                          ¡Se ve bien!
-                        </div>
-                        <div class="invalid-feedback">
-                          Debes estar de acuerdo antes de enviar.
-                        </div>
-                      </div>
-                      <!-- reCAPTCHA -->
-                      <!-- <div class="form-group">
-                        <input type="hidden" name="google-response-token" class="google-response-token form-control"
-                          id="google-response-token" value="" />
-                      </div> -->
-                      <!-- Fin - reCAPTCHA -->
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-lg btn-block hero__btn shadow">Enviar</button>
-                      </div>
-                    </div>
+              <div class="row">
+                <div class="col-12 offset-lg-3 col-lg-6">
+                  <h2 class="text-center">Contacto</h2>
+                  <p class="lead text-center">
+                    Los campos con asteriscos (<span class="asterisco">*</span>) son obligatorios
+                  </p>
+                  <div class="alert alert-dismissible text-center fade" id="alert" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
                 </div>
-              </form>
+              </div>
+              <div class="row">
+                <div class="col-12 offset-lg-3 col-lg-6">
+                  <form class="form needs-validation" id="form" novalidate>
+                    <div class="form-group">
+                      <label for="name">Nombre <span class="asterisco">*</span></label>
+                      <input type="text" class="name form-control" id="name" name="name" placeholder="Aquí va tu nombre"
+                        required>
+                      <!-- <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div> -->
+                      <div class="invalid-feedback">
+                        Proporcione un nombre válido.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="surname">Apellido <span class="asterisco">*</span></label>
+                      <input type="text" class="surname form-control" id="surname" name="surname"
+                        placeholder="Aquí va tu apellido" required>
+                      <!-- <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div> -->
+                      <div class="invalid-feedback">
+                        Proporcione un apellido válido.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Correo <span class="asterisco">*</span></label>
+                      <input type="email" class="email form-control" id="email" name="email"
+                        placeholder="Aquí va tu correo" required>
+                      <!-- <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div> -->
+                      <div class="invalid-feedback">
+                        Proporcione un correo válido.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Mensaje <span class="asterisco">*</span></label>
+                      <textarea class="form-control" id="message" rows="3" name="message"
+                        placeholder="Aquí va tu mensaje" required></textarea>
+                      <!-- <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div> -->
+                      <div class="invalid-feedback">
+                        Proporcione un mensaje.
+                      </div>
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="policy" name="policy" value="ok" required>
+                      <label class="form-check-label" for="policy">Aceptas la politica privacidad <span
+                          class="asterisco">*</span></label>
+                      <!-- <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div> -->
+                      <div class="invalid-feedback">
+                        Debes estar de acuerdo antes de enviar.
+                      </div>
+                    </div>
+                    <!-- reCAPTCHA -->
+                    <div class="form-group">
+                      <input type="hidden" name="google-response-token" class="google-response-token form-control"
+                        id="google-response-token" value="" />
+                    </div>
+                    <!-- Fin - reCAPTCHA -->
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-lg btn-block hero__btn shadow">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -352,9 +359,10 @@
           <div>
             <h3 class="h5">Términos y privacidad</h3>
             <ul class="list-unstyled">
-              <li><a class="footer__text-muted" href="#"><small>Aviso Legal y Términos de Uso</small></a></li>
-              <li><a class="footer__text-muted" href="#"><small>Política de Cookies</small></a></li>
-              <li><a class="footer__text-muted" href="#"><small>Política de Privacidad</small></a></li>
+              <li><a class="footer__text-muted" href="terms-and-conditions.html"><small>Aviso Legal y Términos de
+                    Uso</small></a></li>
+              <li><a class="footer__text-muted" href="privacy.html"><small>Política de Cookies</small></a></li>
+              <li><a class="footer__text-muted" href="cookie.html"><small>Política de Privacidad</small></a></li>
             </ul>
           </div>
         </div>

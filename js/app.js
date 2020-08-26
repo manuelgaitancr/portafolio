@@ -1,4 +1,13 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// Código que genera el token a partir de la llave publica
+grecaptcha.ready(function () {
+  grecaptcha.execute('6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR', {
+    action: 'homepage'
+  }).then(function (token) {
+    $('#google-response-token').val(token);
+  });
+});
+
+// Código de validación de bootstrap con modificaciones para comunicar con server.php
 (function () {
   'use strict';
   window.addEventListener('load', function () {
@@ -27,6 +36,15 @@
           $message = document.getElementById('message').value;
           $policy = document.getElementById('policy').value;
           $token = document.getElementById('google-response-token').value;
+
+          // prueba
+          console.log($form);
+          console.log($name);
+          console.log($surname);
+          console.log($email);
+          console.log($message);
+          console.log($policy);
+          console.log($token);
 
           $.post("php/server.php", {
               name: $name,
