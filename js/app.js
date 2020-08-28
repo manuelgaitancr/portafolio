@@ -18,6 +18,44 @@ $("a").on('click', function (event) {
   }
 });
 
+// CHART
+// Variables
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+  // The type of chart we want to create
+  type: 'bar',
+
+  // The data for our dataset
+  data: {
+    labels: ['HTML/CSS', 'JavaScript', 'Bootstrap', 'TypeScript', 'Angular'],
+    datasets: [{
+      label: '',
+      data: [75, 70, 80, 70, 60],
+      backgroundColor: [
+        'rgba(255, 80, 0, 0.7)',
+        'rgba(255, 221, 0, 0.7)',
+        'rgba(67, 0, 152, 0.7)',
+        'rgba(0, 129, 201, 0.7)',
+        'rgba(246, 50, 62, 0.7)',
+      ]
+    }]
+  },
+
+  // Configuration options go here
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    legend: {
+      display: false
+    }
+  }
+});
+
 // Código que genera el token a partir de la llave publica
 grecaptcha.ready(function () {
   grecaptcha.execute('6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR', {
