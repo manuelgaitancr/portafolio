@@ -1,3 +1,23 @@
+// Agregar desplazamiento suave a todos los links dependiendo del navegador
+$("a").on('click', function (event) {
+  if (window.navigator.vendor == 'Apple Computer, Inc.') {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+
+        window.location.hash = hash;
+      });
+    }
+  } else {
+    $('html').css('scroll-behavior', 'smooth');
+  }
+});
+
 // Código que genera el token a partir de la llave publica
 grecaptcha.ready(function () {
   grecaptcha.execute('6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR', {

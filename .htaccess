@@ -1,0 +1,52 @@
+# Pendiente descripción
+Options All -Indexes
+
+# Seguir todos los enlaces simbolicos
+Options +followSymlinks
+
+# Cabecera X-Frame-Options para mejorar la seguridad
+Header always append X-Frame-Options SAMEORIGIN
+
+# Cabecera Strict-Transport-Security para indicar la duración de la cabecera HSTS
+Header add Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# Cabecera X-XSS-Protection para evitar ataques XSS en IE y Chrome
+Header set X-XSS-Protection "1; mode=block"
+
+# Cabecera X-Content-Type-Options para evitar que se carguen hojas de estilo o scripts maliciosos
+Header set X-Content-Type-Options "nosniff"
+
+# Cabecera Referer-Policy
+Header set Referrer-Policy no-referrer-when-downgrade
+
+# Cabecera Content-Security-Policy
+Header set Content-Security-Policy "upgrade-insecure-requests" env=HTTPS
+
+# Cabecera Feature-Policy
+Header set Feature-Policy "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
+
+# Un año para archivos de imagen (guardar en cache).
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+# Un mes para css y js (guardar en cache).
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# Re direcciones 301
+# Re direccion a un mismo dominio, en este caso a https://manuelgaitan.com
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.manuelgaitan.com [NC]
+RewriteRule ^(.*)$ https://manuelgaitan.com/$1 [L,R=301]
+
+# Páginas de error
+# No se les cambia el nombre a uno simbolico para acortar, no hay necesidad.
+# ErrorDocument 403 /html/403.html
+# ErrorDocument 404 /html/404.html
+
+# Rutas amigables
+RewriteRule ^aviso-legal-y-terminos-de-uso$ terms-and-conditions.html
+RewriteRule ^politica-de-cookies$ cookie.html
+RewriteRule ^politica-de-privacidad$ privacy.html
