@@ -51,16 +51,25 @@ small {
 
 a:hover {
   color: var(--navbar-bg-color);
+  font-weight: 400;
+}
+
+.cookie-policy__link {
+  color: #014ea0;
+}
+
+.cookie-policy__link:hover {
+  color: #014ea0;
+  font-weight: 400;
 }
 
 /* HEADER */
 
-.header {
+/* .header {
   -webkit-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
-  border-bottom: 1px solid var(--navbar-bg-color);
-}
+} */
 
 .navbar-brand {
   padding: 8px;
