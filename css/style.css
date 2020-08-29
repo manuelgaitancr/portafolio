@@ -8,7 +8,7 @@
   --btn-bg-color2: #DABD00;
   --section-bg-color: #FAFAFA;
   --border-color: #dddddd;
-  --overlay-bg-color: rgba(16, 24, 31, 0.7);
+  --overlay-bg-color: rgba(16, 24, 31, 0.5);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -143,9 +143,9 @@ textarea:focus {
   border-bottom: 1px solid #9B8700;
 }
 
-.text-container {
+/* .text-container {
   position: relative;
-}
+} */
 
 .photo-unsplash {
   position: absolute;
@@ -162,15 +162,9 @@ textarea:focus {
   color: white;
 }
 
-.photo-unsplash a:link {
+/* .photo-unsplash a:link {
   text-decoration: none;
-}
-
-.nav-secondary {
-  border-left: 2px solid #DAD8D6;
-  position: fixed;
-  /* display: none; */
-}
+} */
 
 .random-facts,
 .portafolio {
@@ -239,7 +233,7 @@ textarea:focus {
   color: #8B221A;
 }
 
-.subir {
+.scroll-top {
   display: none;
 }
 

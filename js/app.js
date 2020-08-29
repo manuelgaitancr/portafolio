@@ -1,13 +1,13 @@
 // Ocultar boton al hacer scrooll
 window.onscroll = function () {
-  myFunction();
+  hideButton();
 };
 
-function myFunction() {
+function hideButton() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    $('#subir, .nav-secondary').slideDown(100);
+    $('#scroll-top').slideDown(100);
   } else {
-    $('#subir, .nav-secondary').slideUp(100);
+    $('#scroll-top').slideUp(100);
   }
 }
 
