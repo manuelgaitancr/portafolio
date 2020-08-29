@@ -1,3 +1,16 @@
+// Ocultar boton al hacer scrooll
+window.onscroll = function () {
+  myFunction();
+};
+
+function myFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    $('#subir, .nav-secondary').slideDown(100);
+  } else {
+    $('#subir, .nav-secondary').slideUp(100);
+  }
+}
+
 // Agregar desplazamiento suave a todos los links dependiendo del navegador
 $("a").on('click', function (event) {
   if (window.navigator.vendor == 'Apple Computer, Inc.') {

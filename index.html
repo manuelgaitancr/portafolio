@@ -85,7 +85,7 @@
   <script src="https://www.google.com/recaptcha/api.js?render=6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-spy" data-offset="20">
   <header class="header" id="header">
     <nav class="navbar navbar-expand-lg navbar-dark mg__bg-black">
       <a class="navbar-brand" href="inicio">
@@ -182,6 +182,19 @@
                 alt="Imagen oficial tamaño pasaporte de Manuel Gaitán" loading="lazy">
             </div>
           </div>
+          <nav class="d-none d-lg-block col-12 col-lg-2 order-lg-2" id="navbar-spy">
+            <ul class="nav nav-secondary flex-column mt-5 nav-pills">
+              <li class="nav-item">
+                <a class="nav-link text-black-50 active" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="#portafolio">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="row random-facts">
           <div class="pt-5 col-12 offset-lg-2 col-lg-4 d-flex justify-content-center align-self-center">
@@ -439,7 +452,7 @@
     </div>
   </footer>
 
-  <div class="subir d-flex justify-content-center align-items-center">
+  <div class="subir d-flex justify-content-center align-items-center" id="subir">
     <a href="#header" class="btn subir__btn align-middle"><span class="icon-arrow-up"></span>
       <p class="subir__p text-center">Subir</p>
     </a>

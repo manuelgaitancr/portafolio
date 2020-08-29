@@ -166,6 +166,12 @@ textarea:focus {
   text-decoration: none;
 }
 
+.nav-secondary {
+  border-left: 2px solid #DAD8D6;
+  position: fixed;
+  display: none;
+}
+
 .random-facts,
 .portafolio {
   background: var(--section-bg-color);
@@ -231,6 +237,10 @@ textarea:focus {
   background-color: #FFFCCC;
   border: 2px solid #8B221A;
   color: #8B221A;
+}
+
+.subir {
+  display: none;
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {
