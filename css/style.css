@@ -212,6 +212,10 @@ textarea:focus {
   right: 7px;
 }
 
+.subir__policy-and-terms {
+  bottom: 7px;
+}
+
 .subir__btn {
   background-color: #17384c;
   border: 2px solid white;
