@@ -169,7 +169,7 @@ textarea:focus {
 .nav-secondary {
   border-left: 2px solid #DAD8D6;
   position: fixed;
-  display: none;
+  /* display: none; */
 }
 
 .random-facts,
