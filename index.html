@@ -85,7 +85,7 @@
   <script src="https://www.google.com/recaptcha/api.js?render=6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR"></script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-spy" data-offset="20">
+<body data-spy="scroll" data-target="#navbar-spy" data-offset="500">
   <header class="header header__shadow" id="header">
     <nav class="navbar navbar-expand-lg navbar-dark mg__bg-black">
       <a class="navbar-brand" href="inicio">
@@ -115,20 +115,20 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link nav__link-facebook" href="https://www.facebook.com/manuelgaitancr/" target="_blank"><span
-                class="icon-facebook"></span> Facebook</a>
+            <a class="nav-link nav__link-facebook" href="https://www.facebook.com/manuelgaitancr/" target="_blank"
+              rel="noreferrer"><span class="icon-facebook"></span> Facebook</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav__link-instagram" href="https://www.instagram.com/manuelgaitancr/"
-              target="_blank"><span class="icon-instagram"></span> Instagram</a>
+            <a class="nav-link nav__link-instagram" href="https://www.instagram.com/manuelgaitancr/" target="_blank"
+              rel="noreferrer"><span class="icon-instagram"></span> Instagram</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav__link-twitter" href="https://twitter.com/manuelgaitancr/" target="_blank"><span
-                class="icon-twitter"></span> Twitter</a>
+            <a class="nav-link nav__link-twitter" href="https://twitter.com/manuelgaitancr/" target="_blank"
+              rel="noreferrer"><span class="icon-twitter"></span> Twitter</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav__link-linkedin" href="https://www.linkedin.com/in/manuelgaitancr/"
-              target="_blank"><span class="icon-linkedin2"></span> LinkedIn</a>
+            <a class="nav-link nav__link-linkedin" href="https://www.linkedin.com/in/manuelgaitancr/" target="_blank"
+              rel="noreferrer"><span class="icon-linkedin2"></span> LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -150,11 +150,11 @@
             <span class="text-white">
               Foto por
               <a href="https://unsplash.com/@casparrubin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-                target="_blank">Caspar
+                target="_blank" rel="noreferrer">Caspar
                 Camille Rubin</a>
               en
               <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-                target="_blank">Unsplash</a>
+                target="_blank" rel="noreferrer">Unsplash</a>
             </span>
           </div>
         </div>
@@ -164,30 +164,57 @@
     <section class="sobre-mi position-relative" id="sobre-mi">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 offset-lg-2 col-lg-4 d-flex justify-content-center align-self-center">
-            <div class="py-5">
-              <h2>Sobre mí</h2>
-              <p class="lead">Soy un desarrollador web con sede en la calurosa y soleada provincia de
-                Puntarenas, Costa Rica.</p>
-              <p class="lead">Me divierto transformando problemas complejos en proyectos simples, bonitos e intuitivos.
-                Desde hace 4 años me he dedicado aprender todo lo relacionado al mundo de la programación, especialmente
-                al desarrollo web front-end, con el objetivo de llegar ha estas instancias y poder enfrentarme a
-                cualquier
-                reto o montar cualquier proyecto tanto en lo personal como en lo laboral.</p>
+          <div class="d-none d-md-block col-md-2"></div>
+          <div class="col-12 col-md-8">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-center align-self-center">
+                <div class="py-5">
+                  <h2>Sobre mí</h2>
+                  <p class="lead">Soy un desarrollador web con sede en la calurosa y soleada provincia de
+                    Puntarenas, Costa Rica.</p>
+                  <p class="lead">Me divierto transformando problemas complejos en proyectos simples, bonitos e
+                    intuitivos.
+                    Desde hace 4 años me he dedicado aprender todo lo relacionado al mundo de la programación,
+                    especialmente
+                    al desarrollo web front-end, con el objetivo de llegar ha estas instancias y poder enfrentarme a
+                    cualquier
+                    reto o montar cualquier proyecto tanto en lo personal como en lo laboral.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <div class="py-5">
+                  <img src="assets/img/mg-500x500.png" class="img-fluid"
+                    alt="Imagen oficial tamaño pasaporte de Manuel Gaitán" loading="lazy">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-            <div class="py-5">
-              <img src="assets/img/mg-500x500.png" class="img-fluid"
-                alt="Imagen oficial tamaño pasaporte de Manuel Gaitán" loading="lazy">
-            </div>
+          <div class="d-none d-md-block col-md-2">
+            <nav id="navbar-spy" aria-label="Secondary navigation">
+              <ul class="section-nav nav flex-column mt-5 nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link text-black-50 active" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black-50" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black-50" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
         <div class="row random-facts">
-          <div class="pt-5 col-12 offset-lg-2 col-lg-4 d-flex justify-content-center align-self-center">
+          <div class="pt-5 col-12 offset-md-2 col-md-4 d-flex justify-content-center align-self-center">
             <img src="assets/img/mg-2-500x500.png" alt="Manuel Gaitán en la playa" class="img-fluid" />
           </div>
-          <div class="pb-5 col-12 col-lg-4 d-flex justify-content-center align-items-center">
+          <div class="pb-5 col-12 col-md-4 d-flex justify-content-center align-items-center">
             <div>
               <h2 class="text-left">Hechos al azar</h2>
               <ul class="nav flex-column">
@@ -213,13 +240,19 @@
             </div>
           </div>
         </div>
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
         <div class="row">
-          <div class="pt-5 col-12 offset-lg-2 col-lg-8 d-flex justify-content-center">
+          <div class="pt-5 col-12 offset-md-2 col-md-8 d-flex justify-content-center">
             <div class="col-12 d-flex justify-content-start">
               <h2>Mis habilidades</h2>
             </div>
           </div>
-          <div class="pb-5 col-12 offset-lg-2 col-lg-8 d-flex justify-content-center">
+          <div class="pb-5 col-12 offset-md-2 col-md-8 d-flex justify-content-center">
             <div class="col-12 d-flex justify-content-center">
               <canvas id="myChart"></canvas>
             </div>
@@ -392,17 +425,17 @@
             <h3 class="h5">Encuéntrame en</h3>
             <ul class="list-unstyled">
               <li><a class="footer__text-muted nav__link-facebook" href="https://www.facebook.com/manuelgaitancr/"
-                  target="_blank"><small><span class="icon-facebook"></span>
+                  target="_blank" rel="noreferrer"><small><span class="icon-facebook"></span>
                     Facebook</small></a></li>
               <li><a class="footer__text-muted nav__link-instagram" href="https://www.instagram.com/manuelgaitancr/"
-                  target="_blank"><small><span class="icon-instagram"></span>
+                  target="_blank" rel="noreferrer"><small><span class="icon-instagram"></span>
                     Instagram</small></a></li>
               <li><a class="footer__text-muted nav__link-twitter" href="https://twitter.com/manuelgaitancr/"
-                  target="_blank"><small><span class="icon-twitter"></span>
+                  target="_blank" rel="noreferrer"><small><span class="icon-twitter"></span>
                     Twitter</small></a>
               </li>
               <li><a class="footer__text-muted nav__link-linkedin" href="https://www.linkedin.com/in/manuelgaitancr/"
-                  target="_blank"><small><span class="icon-linkedin2"></span>
+                  target="_blank" rel="noreferrer"><small><span class="icon-linkedin2"></span>
                     LinkedIn</small></a></li>
             </ul>
           </div>
@@ -411,13 +444,16 @@
           <div>
             <h3 class="h5">Términos y privacidad</h3>
             <ul class="list-unstyled">
-              <li><a class="footer__text-muted" href="aviso-legal-y-terminos-de-uso" target="_blank"><small>Aviso Legal
+              <li><a class="footer__text-muted" href="aviso-legal-y-terminos-de-uso" target="_blank"
+                  rel="noreferrer"><small>Aviso Legal
                     y Términos de
                     Uso</small></a></li>
-              <li><a class="footer__text-muted" href="politica-de-cookies" target="_blank"><small>Política de
+              <li><a class="footer__text-muted" href="politica-de-cookies" target="_blank"
+                  rel="noreferrer"><small>Política de
                     Cookies</small></a>
               </li>
-              <li><a class="footer__text-muted" href="politica-de-privacidad" target="_blank"><small>Política de
+              <li><a class="footer__text-muted" href="politica-de-privacidad" target="_blank"
+                  rel="noreferrer"><small>Política de
                     Privacidad</small></a>
               </li>
             </ul>

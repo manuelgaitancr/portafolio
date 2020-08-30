@@ -4,12 +4,13 @@ window.onscroll = function () {
 };
 
 function hideButton() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    $('#scroll-top').slideDown(100);
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    $('.section-nav, #scroll-top').slideDown(100);
   } else {
-    $('#scroll-top').slideUp(100);
+    $('.section-nav, #scroll-top').slideUp(100);
   }
 }
+
 
 // Agregar desplazamiento suave a todos los links dependiendo del navegador
 $("a").on('click', function (event) {
