@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /aviso-legal-y-terminos-de-uso
+Disallow: /politica-de-cookies
+Disallow: /politica-de-privacidad
+
+Sitemap: http://manuelgaitan.com/sitemap.xml
