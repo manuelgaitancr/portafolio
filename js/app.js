@@ -44,7 +44,7 @@ var chart = new Chart(ctx, {
     labels: ['HTML/CSS', 'JavaScript', 'Bootstrap', 'TypeScript', 'Angular'],
     datasets: [{
       label: '',
-      data: [75, 70, 80, 70, 60],
+      data: [75, 70, 80, 60, 55],
       backgroundColor: [
         'rgba(255, 80, 0, 0.7)',
         'rgba(255, 221, 0, 0.7)',

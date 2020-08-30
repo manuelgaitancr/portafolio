@@ -94,7 +94,7 @@
         Manuel Gaitán
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Selecttor de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -169,7 +169,7 @@
             <div class="row">
               <div class="col-12 col-md-6 d-flex justify-content-center align-self-center">
                 <div class="py-5">
-                  <h2>Sobre mí</h2>
+                  <h2><span class="border__bottom">Sobre mí</span></h2>
                   <p class="lead">Soy un desarrollador web con sede en la calurosa y soleada provincia de
                     Puntarenas, Costa Rica.</p>
                   <p class="lead">Me divierto transformando problemas complejos en proyectos simples, bonitos e
@@ -189,11 +189,19 @@
               </div>
             </div>
           </div>
-          <div class="d-none d-md-block col-md-2">
-            <nav id="navbar-spy" aria-label="Secondary navigation">
-              <ul class="section-nav nav flex-column mt-5 nav-pills">
+          <div class="d-none d-lg-block col-lg-2">
+            <nav class="nav-pills" id="navbar-spy" aria-label="Navegación secundaria">
+              <ul class="section-nav nav flex-column">
                 <li class="nav-item">
                   <a class="nav-link text-black-50 active" href="#sobre-mi">Sobre mí</a>
+                  <ul class="list__nivel-two">
+                    <li class="nav-item">
+                      <a class="nav-link text-black-50" href="#hechos-al-azar">Hechos al azar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-black-50" href="#mis-habilidades">Mis habilidades</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black-50" href="#portafolio">Portafolio</a>
@@ -208,7 +216,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="hechos-al-azar" id="hechos-al-azar">
       <div class="container-fluid">
         <div class="row random-facts">
           <div class="pt-5 col-12 offset-md-2 col-md-4 d-flex justify-content-center align-self-center">
@@ -216,7 +224,7 @@
           </div>
           <div class="pb-5 col-12 col-md-4 d-flex justify-content-center align-items-center">
             <div>
-              <h2 class="text-left">Hechos al azar</h2>
+              <h2 class="text-left"><span class="border__bottom">Hechos al azar</span></h2>
               <ul class="nav flex-column">
                 <li class="lead my-2">
                   &#x2615; Bebo mucho café
@@ -244,12 +252,12 @@
       </div>
     </section>
 
-    <section>
+    <section class="mis-habilidades" id="mis-habilidades">
       <div class="container-fluid">
         <div class="row">
           <div class="pt-5 col-12 offset-md-2 col-md-8 d-flex justify-content-center">
             <div class="col-12 d-flex justify-content-start">
-              <h2>Mis habilidades</h2>
+              <h2><span class="border__bottom">Mis habilidades</span></h2>
             </div>
           </div>
           <div class="pb-5 col-12 offset-md-2 col-md-8 d-flex justify-content-center">
@@ -266,7 +274,7 @@
       <div class="container-fluid py-5 bg-transparent">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center">Portafolio</h2>
+            <h2 class="text-center"><span class="border__bottom">Portafolio</span></h2>
             <p class="lead text-center">Acá podrás ver los proyectos más destacados de mi portafolio</p>
           </div>
         </div>
@@ -312,12 +320,12 @@
             <div class="py-5">
               <div class="row">
                 <div class="col-12 offset-lg-3 col-lg-6">
-                  <h2 class="text-center">Contacto</h2>
+                  <h2 class="text-center"><span class="border__bottom">Contacto</span></h2>
                   <p class="lead text-center">
                     Los campos con asteriscos (<span class="asterisco">*</span>) son obligatorios
                   </p>
                   <div class="alert alert-dismissible text-center fade" id="alert" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
@@ -478,7 +486,7 @@
   <div class="scroll-top" id="scroll-top">
     <div class="subir d-flex justify-content-center align-items-center" id="subir">
       <a href="#header" class="btn subir__btn align-middle"><span class="icon-arrow-up"></span>
-        <p class="subir__p text-center">Subir</p>
+        <p class="subir__p text-center"><small>Subir</small></p>
       </a>
     </div>
   </div>

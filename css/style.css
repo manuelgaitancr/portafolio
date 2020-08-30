@@ -56,6 +56,14 @@ a:hover {
   font-weight: 400;
 }
 
+.border__bottom {
+  border-bottom: 2px solid var(--btn-bg-color);
+}
+
+.list__nivel-two {
+  list-style: none;
+}
+
 .cookie-policy__link,
 .terms-and-conditions__link {
   color: #014ea0;
@@ -162,12 +170,14 @@ textarea:focus {
   position: fixed;
   right: 7px;
   bottom: 396px;
+  border-left: 1px solid rgba(0, 0, 0, .1) !important;
 }
 
 .nav-pills .nav-link.active {
-  background-color: #17384c;
-  border: 2px solid white;
-  color: white !important;
+  background-color: initial;
+  border: initial;
+  color: rgba(0, 0, 0, .7) !important;
+  font-weight: 400;
 }
 
 .random-facts,
@@ -237,8 +247,6 @@ textarea:focus {
   height: 68px;
 }
 
-.nav-pills .nav-link.active:hover,
-.nav-pills .nav-link.active:focus,
 .subir__btn:hover,
 .subir__btn:focus {
   background-color: #FFFCCC;
