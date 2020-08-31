@@ -190,6 +190,18 @@ textarea:focus {
   border-bottom: 1px solid var(--border-color);
 }
 
+.card__link {
+  text-decoration: none !important;
+}
+
+.card__title-color {
+  color: #333333;
+}
+
+.card__text-color {
+  color: #666666;
+}
+
 .asterisco {
   color: #a50404;
   font-weight: 400;
