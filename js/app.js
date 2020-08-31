@@ -4,7 +4,7 @@ window.onscroll = function () {
 };
 
 function hideButton() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 575 || document.documentElement.scrollTop > 575) {
     $('.section-nav, #scroll-top').slideDown(100);
   } else {
     $('.section-nav, #scroll-top').slideUp(100);

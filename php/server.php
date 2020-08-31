@@ -138,12 +138,30 @@ if ($points == 6) {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->CharSet = 'UTF-8';
-    $mail->Subject = "$message | manuelgaitan.com";
-    $mail->Body    = "<body><header><div style='background: black;'><h1 style='text-align: center; color: white;'>manuelgaitan.com</h1></div></header><br/><hr/>
-                      <main><b>Nombre Cliente:</b> $name $surname<br/>
-                      <b>Proyecto:</b> $message<br/>
-                      <b>Correo electrónico:</b> $email<br/><hr/></main>
-                      <footer><div><h2 style='text-align: center; background: gray; color: white;'>© 2020 Manuel Gaitán. Todos los derechos reservardos.</h2><div><footer></body>";
+    $mail->Subject = "Mensaje enviado desde manuelgaitan.com";
+    $mail->Body    = "<body>
+                      <header>
+                        <div style='background: black;'>
+                          <h1 style='text-align: center; color: white;'>manuelgaitan.com</h1>
+                        </div>
+                      </header>
+                      <br/>
+                      <hr/>
+                      <main>
+                        <label><b>Nombre Cliente:</b></label> <p>$name $surname</p>
+                        <br/>
+                        <label><b>Correo electrónico:</b></label> <p>$email</p>
+                        <br/>
+                        <label><b>Nombre Cliente:</b></label> <p><i>$message</i></p>
+                      </main>
+                      <footer>
+                        <div>
+                          <h2 style='text-align: center; background: gray; color: white;'>
+                            © 2020 Manuel Gaitán. Todos los derechos reservardos.
+                          </h2>
+                        <div>
+                      <footer>
+                    </body>";
     //$mail->AltBody = "";
 
     $mail->send();
