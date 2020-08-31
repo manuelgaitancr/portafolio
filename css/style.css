@@ -192,6 +192,7 @@ textarea:focus {
 
 .card__link {
   text-decoration: none !important;
+  opacity: 1;
 }
 
 .card__title-color {
