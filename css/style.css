@@ -11,8 +11,6 @@
   --overlay-bg-color: rgba(16, 24, 31, 0.5);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 html {
   scroll-behavior: smooth;
 }
@@ -44,6 +42,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Roboto',
+    sans-serif;
   font-weight: 400 !important;
 }
 
