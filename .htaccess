@@ -43,12 +43,12 @@ RewriteRule ^(.*)$ https://manuelgaitan.com/$1 [L,R=301]
 
 # Páginas de error
 # No se les cambia el nombre a uno simbolico para acortar, no hay necesidad.
-ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
 
 # Rutas amigables
 #home
-RewriteRule ^inicio$ index.html [L]
+#RewriteRule ^inicio$ index.html [L]
 
 #Terms and Conditions
 RewriteRule ^aviso-legal-y-terminos-de-uso$ terms-and-conditions.html
