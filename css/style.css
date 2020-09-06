@@ -289,10 +289,7 @@ textarea:focus {
   }
 }
 
-@media(min-width: 768px) {
-  .hero {
-    background-image: url('../assets/img/hero-tablet.jpg');
-  }
+@media(min-width: 320px) and (max-width: 767.98px) {
 
   .subir,
   .subir__btn {
@@ -303,6 +300,12 @@ textarea:focus {
 
   .subir__p {
     font-size: 10px !important;
+  }
+}
+
+@media(min-width: 768px) {
+  .hero {
+    background-image: url('../assets/img/hero-tablet.jpg');
   }
 }
 
