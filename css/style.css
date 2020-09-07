@@ -75,6 +75,37 @@ a:hover {
   font-weight: 400;
 }
 
+a.skip-link__sobre-mi,
+a.skip-link__hechos-al-azar,
+a.skip-link__mis-habilidades,
+a.skip-link__portafolio,
+a.skip-link__contacto {
+  height: 0;
+}
+
+a.skip-link__sobre-mi:focus,
+a.skip-link__sobre-mi:active,
+a.skip-link__hechos-al-azar:focus,
+a.skip-link__hechos-al-azar:active,
+a.skip-link__mis-habilidades:focus,
+a.skip-link__mis-habilidades:active,
+a.skip-link__portafolio:focus,
+a.skip-link__portafolio:active,
+a.skip-link__contacto:focus,
+a.skip-link__contacto:active {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #FFFCCC;
+  border: 2px solid #8B221A;
+  color: #8B221A;
+  z-index: 9999;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: fit-content;
+  height: auto;
+}
+
 .header__shadow {
   -webkit-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.75);

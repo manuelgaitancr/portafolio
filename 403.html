@@ -21,7 +21,7 @@
   <meta property="og:type" content="WebSite">
   <meta property="og:title" content="Error 403 | Manuel Gaitán">
   <meta property="og:description" content="Acceso prohibido">
-  <meta property="og:image" content="https://manuelgaitan.com/assets/img/banner.png">
+  <meta property="og:image" content="https://manuelgaitan.com/assets/img/banner.jpg">
   <meta property="og:locale" content="es_CR">
   <meta property="fb:app_id" content="255019122280423" />
 
@@ -30,7 +30,7 @@
   <meta property="twitter:url" content="https://manuelgaitan.com/403.html">
   <meta property="twitter:title" content="Error 403 | Manuel Gaitán">
   <meta property="twitter:description" content="Acceso prohibido">
-  <meta property="twitter:image" content="https://manuelgaitan.com/assets/img/banner.png">
+  <meta property="twitter:image" content="https://manuelgaitan.com/assets/img/banner.jpg">
 
   <!--Main Icon -->
   <link rel="shortcut icon" href="favicon.ico" />
@@ -85,10 +85,18 @@
   <main>
     <div class="container main__container">
       <div class="row main__row-error m-auto">
-        <div class="col-12 col-md-6 main__col-1 d-flex justify-content-center align-items-center">
-          <img src="assets/img/error-403.png" class="img__error img-fluid" alt="Imagen mensaje de Acceso prohibido">
+        <div class="py-2 py-lg-5 col-12 col-md-6 main__col-1 d-flex justify-content-center align-items-center">
+          <picture>
+            <source media="(min-width: 375px)" srcset="assets/img/error-403-mobile-m.png">
+            <source media="(min-width: 425px)" srcset="assets/img/error-403-mobile-l.png">
+            <source media="(min-width: 768px)" srcset="assets/img/error-403-mobile-tablet.png">
+            <source media="(min-width: 1024px)" srcset="assets/img/error-403-laptop.png">
+            <source media="(min-width: 1440px)" srcset="assets/img/error-403-laptop-l.png">
+            <img src="assets/img/error-403-mobile-s.png" class="img__error" alt="Imagen mensaje de Acceso prohibido"
+              loading="lazy">
+          </picture>
         </div>
-        <div class="col-12 col-md-6 align-self-center">
+        <div class="py-2 py-lg-5 col-12 col-md-6 align-self-center">
           <h2 class="mt-1 mt-md-1">¡ACCESO PROHIBIDO!</h2>
           <p class="lead font-italic">
             Usted no tiene permiso para acceder al directorio solicitado. No existe un documento índice, o el directorio
