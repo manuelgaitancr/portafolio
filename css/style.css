@@ -81,6 +81,7 @@ a.skip-link__mis-habilidades,
 a.skip-link__portafolio,
 a.skip-link__contacto {
   height: 0;
+  color: transparent;
 }
 
 a.skip-link__sobre-mi:focus,
@@ -196,6 +197,15 @@ textarea:focus {
   color: white;
 }
 
+.sobre-mi__img,
+.hechos-al-azar__img,
+.mis-habilidades__content,
+.portafolio__content,
+.form-content,
+.footer {
+  opacity: 0;
+}
+
 .section-nav {
   position: fixed;
   right: 7px;
@@ -223,6 +233,11 @@ textarea:focus {
 .card__link {
   text-decoration: none !important;
   opacity: 1;
+}
+
+.card__opacity {
+  opacity: 0.5;
+  transition-timing-function: ease;
 }
 
 .card__title-color {
@@ -300,6 +315,164 @@ textarea:focus {
 .scroll-top,
 .section-nav {
   display: none;
+}
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes entrar-arriba {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes entrar-abajo {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes entrar-izquierda {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes entrar-derecha {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes salir-arriba {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes salir {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.entrar {
+  animation-name: entrar;
+}
+
+.entrar-arriba {
+  animation-name: entrar-arriba;
+}
+
+.entrar-abajo {
+  animation-name: entrar-abajo;
+}
+
+.entrar-izquierda {
+  animation-name: entrar-izquierda;
+}
+
+.entrar-derecha {
+  animation-name: entrar-derecha;
+}
+
+.salir {
+  animation-name: salir;
+}
+
+.salir-arriba {
+  animation-name: salir-arriba;
+}
+
+.entrar,
+.entrar-arriba,
+.entrar-izquierda,
+.entrar-derecha,
+.salir,
+.salir-arriba,
+.entrar-abajo {
+  animation-fill-mode: both;
+}
+
+.duracion-1s {
+  animation-duration: 1s;
+}
+
+.duracion-2s {
+  animation-duration: 2s;
+}
+
+.duracion-3s {
+  animation-duration: 3s;
+}
+
+.duracion-4s {
+  animation-duration: 4s;
+}
+
+.duracion-5s {
+  animation-duration: 5s;
+}
+
+.retrasar-1s {
+  animation-delay: 1s;
+}
+
+.retrasar-2s {
+  animation-delay: 2s;
+}
+
+.retrasar-3s {
+  animation-delay: 3s;
+}
+
+.retrasar-4s {
+  animation-delay: 4s;
+}
+
+.retrasar-5s {
+  animation-delay: 5s;
 }
 
 @media(min-width: 320px) {

@@ -1,16 +1,38 @@
 // Ocultar boton al hacer scrooll
-window.onscroll = function () {
-  hideButton();
-};
-
 function hideButton() {
   if (document.body.scrollTop > 575 || document.documentElement.scrollTop > 575) {
     $('.section-nav, #scroll-top').slideDown(100);
+    document.getElementById('nav-two').classList.add("entrar-arriba", "duracion-1s");
+    document.getElementById('subir__btn').classList.add("entrar-derecha", "duracion-1s");
   } else {
     $('.section-nav, #scroll-top').slideUp(100);
   }
 }
 
+window.onscroll = function () {
+  hideButton();
+};
+
+
+// Animando imagenes al hacer scroll
+function datosAnimar(id, altura, clase1, clase2, clase3) {
+  let elemento = document.getElementById(id);
+  let alturaElemento = elemento.getBoundingClientRect().top;
+  if (alturaElemento < altura) {
+    elemento.classList.add(clase1, clase2, clase3);
+  }
+}
+
+function animar() {
+  datosAnimar("sobre-mi__img", 600, "entrar-derecha", "duracion-1s");
+  datosAnimar("hechos-al-azar__img", 575, "entrar-izquierda", "duracion-1s");
+  datosAnimar("mis-habilidades__content", 550, "entrar-izquierda", "duracion-1s");
+  datosAnimar("portafolio__content", 525, "entrar-abajo", "duracion-1s");
+  datosAnimar("form-content", 500, "entrar-derecha", "duracion-1s");
+  datosAnimar("footer", 475, "entrar-abajo", "duracion-1s");
+}
+
+window.addEventListener("scroll", animar);
 
 // Agregar desplazamiento suave a todos los links dependiendo del navegador
 $("a").on('click', function (event) {
@@ -109,15 +131,6 @@ grecaptcha.ready(function () {
           $policy = document.getElementById('policy').value;
           $token = document.getElementById('google-response-token').value;
 
-          // prueba
-          console.log($form);
-          console.log($name);
-          console.log($surname);
-          console.log($email);
-          console.log($message);
-          console.log($policy);
-          console.log($token);
-
           $.post("php/server.php", {
               name: $name,
               surname: $surname,
@@ -159,3 +172,37 @@ grecaptcha.ready(function () {
 
   }, false);
 })();
+
+// Opacity cards
+let cards = document.getElementById("cards");
+for (let i = 0; i < cards.children.length; i++) {
+  cards.children[i].addEventListener("mouseover", function () {
+    switch (i) {
+      case 0:
+        cards.children[0].firstElementChild.classList.remove("card__opacity");
+        cards.children[1].firstElementChild.classList.add("card__opacity");
+        cards.children[2].firstElementChild.classList.add("card__opacity");
+        break;
+      case 1:
+        cards.children[1].firstElementChild.classList.remove("card__opacity");
+        cards.children[0].firstElementChild.classList.add("card__opacity");
+        cards.children[2].firstElementChild.classList.add("card__opacity");
+        break;
+      case 2:
+        cards.children[2].firstElementChild.classList.remove("card__opacity");
+        cards.children[0].firstElementChild.classList.add("card__opacity");
+        cards.children[1].firstElementChild.classList.add("card__opacity");
+        break;
+      default:
+        cards.children[0].firstElementChild.classList.remove("card__opacity");
+        cards.children[1].firstElementChild.classList.remove("card__opacity");
+        cards.children[2].firstElementChild.classList.remove("card__opacity");
+        break;
+    }
+  });
+  cards.children[i].addEventListener("mouseout", function () {
+    cards.children[0].firstElementChild.classList.remove("card__opacity");
+    cards.children[1].firstElementChild.classList.remove("card__opacity");
+    cards.children[2].firstElementChild.classList.remove("card__opacity");
+  });
+}

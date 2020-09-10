@@ -96,9 +96,9 @@
   <a class="skip-link__portafolio" href="#portafolio">Saltar a Portafolio</a>
   <a class="skip-link__contacto" href="#contacto">Saltar a Contacto</a>
 
-  <header class="header header__shadow" id="header">
+  <header class="header header__shadow entrar-arriba duracion-1s" id="header">
     <nav class="navbar navbar-expand-lg navbar-dark mg__bg-black">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="https://manuelgaitan.com/">
         <img src="assets/img/manuel-gaitan-brand-1.png" width="30" height="30" class="d-inline-block align-top"
           alt="Logo principal de la pagina Manuel Gaitán" loading="lazy">
         Manuel Gaitán
@@ -111,7 +111,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://manuelgaitan.com/">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#sobre-mi">Sobre mí</a>
@@ -146,7 +146,7 @@
   </header>
 
   <main class="main" id="main">
-    <div class="hero container-fluid" id="hero" role="banner">
+    <div class="hero container-fluid entrar duracion-1s retrasar-1s" id="hero" role="banner">
       <div class="row hero__row">
         <div class="col-12 d-flex justify-content-center align-items-center">
           <div class="text-container">
@@ -191,7 +191,8 @@
                     reto o montar cualquier proyecto tanto en lo personal como en lo laboral.</p>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+              <div class="sobre-mi__img col-12 col-lg-6 d-flex justify-content-center align-items-center"
+                id="sobre-mi__img">
                 <div>
                   <picture>
                     <source srcset="assets/img/manuel-gaitan-mobile-m.png" media="(min-width: 375px)">
@@ -208,7 +209,7 @@
           </div>
           <div class="d-none d-lg-block col-lg-2">
             <nav class="nav-pills" id="navbar-spy" aria-label="Navegación secundaria">
-              <ul class="section-nav nav flex-column">
+              <ul class="section-nav nav flex-column" id="nav-two">
                 <li class="nav-item">
                   <a class="nav-link text-black-50 active" href="#sobre-mi">Sobre mí</a>
                   <ul class="list__nivel-two">
@@ -236,7 +237,8 @@
     <section class="hechos-al-azar" id="hechos-al-azar">
       <div class="container-fluid">
         <div class="py-3 py-lg-5 row hechos-al-azar__content">
-          <div class="col-12 offset-lg-2 col-lg-4 d-flex justify-content-center align-items-center">
+          <div class="hechos-al-azar__img col-12 offset-lg-2 col-lg-4 d-flex justify-content-center align-items-center"
+            id="hechos-al-azar__img">
             <picture>
               <source srcset="assets/img/manuel-gaitan-hechos-al-azar-mobile-m.png" media="(min-width: 375px)">
               <source srcset="assets/img/manuel-gaitan-hechos-al-azar-mobile-l.png" media="(min-width: 425px)">
@@ -279,13 +281,14 @@
 
     <section class="py-3 py-lg-5 mis-habilidades" id="mis-habilidades">
       <div class="container-fluid">
-        <div class="row mis-habilidades__content">
+        <div class="row mis-habilidades__content" id="mis-habilidades__content">
           <div class="pt-5 col-12 offset-lg-2 col-lg-8 d-flex justify-content-center">
             <div class="col-12 d-flex justify-content-start">
               <h2><span class="border__bottom">Mis habilidades</span></h2>
             </div>
           </div>
-          <div class="pb-5 col-12 offset-lg-2 col-lg-8 d-flex justify-content-center">
+          <div class="mis-habilidades__chart pb-5 col-12 offset-lg-2 col-lg-8 d-flex justify-content-center"
+            id="mis-habilidades__chart">
             <div class="col-12 d-flex justify-content-center">
               <canvas id="myChart"></canvas>
             </div>
@@ -296,7 +299,7 @@
 
     <section class="py-3 py-lg-5 portafolio" id="portafolio" aria-roledescription="carousels"
       aria-label="Proyectos web más destacados de Manuel Gaitán">
-      <div class="container-fluid py-5 bg-transparent portafolio__content">
+      <div class="container-fluid py-5 bg-transparent portafolio__content" id="portafolio__content">
         <div class="row">
           <div class="col-12">
             <h2 class="text-center"><span class="border__bottom">Portafolio</span></h2>
@@ -304,8 +307,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 offset-lg-2 col-lg-8">
-            <div class="row">
+          <div class="portafolio-proyectos col-12 offset-lg-2 col-lg-8" id="portafolio-proyectos">
+            <div class="row" id="cards">
               <div class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center align-items-center">
                 <a href="https://manuelgaitancr.github.io/practica-accesibilidad-1/index.html" class="card__link"
                   target="_blank" rel="noreferrer">
@@ -352,7 +355,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 offset-lg-2 col-lg-8">
-            <div class="py-5">
+            <div class="py-5 form-content" id="form-content">
               <div class="row">
                 <div class="col-12 offset-lg-3 col-lg-6">
                   <h2 class="text-center"><span class="border__bottom">Contacto</span></h2>
@@ -447,7 +450,7 @@
       <div class="row">
         <div class="col-12 col-lg-3 d-flex justify-content-center">
           <div class="footer__container-brand">
-            <a class="footer__brand" href="#">
+            <a class="footer__brand" href="https://manuelgaitan.com/">
               <img src="assets/img/manuel-gaitan-brand-2.png" class="footer__img img-fluid d-inline-block align-top"
                 alt="Logo secundario de la pagina Manuel Gaitán" width="48" height="48" loading="lazy">
             </a>
@@ -520,7 +523,7 @@
 
   <div class="scroll-top" id="scroll-top">
     <div class="subir d-flex justify-content-center align-items-center" id="subir">
-      <a href="#header" class="btn subir__btn align-middle"><span class="icon-arrow-up"></span>
+      <a href="#header" class="btn subir__btn align-middle" id="subir__btn"><span class="icon-arrow-up"></span>
         <p class="subir__p text-center"><small>Subir</small></p>
       </a>
     </div>
