@@ -1,16 +1,30 @@
 // Ocultar boton al hacer scrooll
 function hideButton() {
   if (document.body.scrollTop > 575 || document.documentElement.scrollTop > 575) {
-    $('.section-nav, #scroll-top').slideDown(100);
-    document.getElementById('nav-two').classList.add("entrar-arriba", "duracion-1s");
-    document.getElementById('subir__btn').classList.add("entrar-derecha", "duracion-1s");
+    $('#telegram').slideDown(100);
+    document.getElementById("telegram").removeAttribute("style");
+    document.getElementById("telegram").setAttribute("style", "display: flex");
+    document.getElementById("telegram").classList.add("entrar-derecha", "duracion-1s");
+
+    $('#whatsapp').slideDown(100);
+    document.getElementById("whatsapp").removeAttribute("style");
+    document.getElementById("whatsapp").setAttribute("style", "display: flex");
+    document.getElementById("whatsapp").classList.add("entrar-derecha", "duracion-2s");
+
+    $('#subir').slideDown(100);
+    document.getElementById("subir").removeAttribute("style");
+    document.getElementById("subir").setAttribute("style", "display: flex");
+    document.getElementById("subir").classList.add("entrar-derecha", "duracion-3s");
   } else {
-    $('.section-nav, #scroll-top').slideUp(100);
+    $('#telegram').slideUp(100);
+    $('#whatsapp').slideUp(100);
+    $('#subir').slideUp(100);
   }
 }
 
 window.onscroll = function () {
   hideButton();
+  animar();
 };
 
 
@@ -31,8 +45,6 @@ function animar() {
   datosAnimar("form-content", 500, "entrar-derecha", "duracion-1s");
   datosAnimar("footer", 475, "entrar-abajo", "duracion-1s");
 }
-
-window.addEventListener("scroll", animar);
 
 // Agregar desplazamiento suave a todos los links dependiendo del navegador
 $("a").on('click', function (event) {
@@ -175,6 +187,7 @@ grecaptcha.ready(function () {
 
 // Opacity cards
 let cards = document.getElementById("cards");
+
 for (let i = 0; i < cards.children.length; i++) {
   cards.children[i].addEventListener("mouseover", function () {
     switch (i) {
@@ -200,7 +213,39 @@ for (let i = 0; i < cards.children.length; i++) {
         break;
     }
   });
+
   cards.children[i].addEventListener("mouseout", function () {
+    cards.children[0].firstElementChild.classList.remove("card__opacity");
+    cards.children[1].firstElementChild.classList.remove("card__opacity");
+    cards.children[2].firstElementChild.classList.remove("card__opacity");
+  });
+
+  cards.children[i].addEventListener("focusin", function () {
+    switch (i) {
+      case 0:
+        cards.children[0].firstElementChild.classList.remove("card__opacity");
+        cards.children[1].firstElementChild.classList.add("card__opacity");
+        cards.children[2].firstElementChild.classList.add("card__opacity");
+        break;
+      case 1:
+        cards.children[1].firstElementChild.classList.remove("card__opacity");
+        cards.children[0].firstElementChild.classList.add("card__opacity");
+        cards.children[2].firstElementChild.classList.add("card__opacity");
+        break;
+      case 2:
+        cards.children[2].firstElementChild.classList.remove("card__opacity");
+        cards.children[0].firstElementChild.classList.add("card__opacity");
+        cards.children[1].firstElementChild.classList.add("card__opacity");
+        break;
+      default:
+        cards.children[0].firstElementChild.classList.remove("card__opacity");
+        cards.children[1].firstElementChild.classList.remove("card__opacity");
+        cards.children[2].firstElementChild.classList.remove("card__opacity");
+        break;
+    }
+  });
+
+  cards.children[i].addEventListener("focusout", function () {
     cards.children[0].firstElementChild.classList.remove("card__opacity");
     cards.children[1].firstElementChild.classList.remove("card__opacity");
     cards.children[2].firstElementChild.classList.remove("card__opacity");

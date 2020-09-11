@@ -55,7 +55,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Schema.Org -->
-  <script defer type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context": "http://www.schema.org",
       "@type": "WebSite",
@@ -85,7 +85,7 @@
   </script>
 
   <!-- Recaptcha -->
-  <script defer src="https://www.google.com/recaptcha/api.js?render=6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdKOfUUAAAAANfq7RUMmCjszDDO5Rf6dXHyt3eR"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-spy" data-offset="500">
@@ -207,29 +207,7 @@
               </div>
             </div>
           </div>
-          <div class="d-none d-lg-block col-lg-2">
-            <nav class="nav-pills" id="navbar-spy" aria-label="Navegación secundaria">
-              <ul class="section-nav nav flex-column" id="nav-two">
-                <li class="nav-item">
-                  <a class="nav-link text-black-50 active" href="#sobre-mi">Sobre mí</a>
-                  <ul class="list__nivel-two">
-                    <li class="nav-item">
-                      <a class="nav-link text-black-50" href="#hechos-al-azar">Hechos al azar</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-black-50" href="#mis-habilidades">Mis habilidades</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-black-50" href="#portafolio">Portafolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-black-50" href="#contacto">Contacto</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <div class="d-none d-lg-block col-lg-2"></div>
         </div>
       </div>
     </section>
@@ -313,7 +291,8 @@
                 <a href="https://manuelgaitancr.github.io/practica-accesibilidad-1/index.html" class="card__link"
                   target="_blank" rel="noreferrer">
                   <div class="card my-3" style="width: 18rem;">
-                    <img src="assets/img/practica-accesibilidad-1-mobile.png" class="card-img-top" alt="mg-slide-1.png">
+                    <img src="assets/img/practica-accesibilidad-1-mobile.png" class="card-img-top"
+                      alt="Proyecto de accesibilidad 1">
                     <div class="card-body">
                       <h3 class="h5 card-title card__title-color">Proyecto de accesibilidad 1</h3>
                       <p class="card-text card__text-color">Instituto Nacional de Aprendisaje</p>
@@ -325,7 +304,8 @@
                 <a href="https://manuelgaitancr.github.io/practica-accesibilidad-2/index.html" class="card__link"
                   target="_blank" rel="noreferrer">
                   <div class="card my-3" style="width: 18rem;">
-                    <img src="assets/img/practica-accesibilidad-2-mobile.png" class="card-img-top" alt="mg-slide-1.png">
+                    <img src="assets/img/practica-accesibilidad-2-mobile.png" class="card-img-top"
+                      alt="Proyecto de accesibilidad 2">
                     <div class="card-body">
                       <h3 class="h5 card-title card__title-color">Proyecto de accesibilidad 2</h3>
                       <p class="card-text card__text-color">Instituto Nacional de Aprendisaje</p>
@@ -337,7 +317,8 @@
                 <a href="https://manuelgaitancr.github.io/practica-accesibilidad-3/index.html" class="card__link"
                   target="_blank" rel="noreferrer">
                   <div class="card my-3" style="width: 18rem;">
-                    <img src="assets/img/practica-accesibilidad-3-mobile.png" class="card-img-top" alt="mg-slide-1.png">
+                    <img src="assets/img/practica-accesibilidad-3-mobile.png" class="card-img-top"
+                      alt="Proyecto de accesibilidad 3">
                     <div class="card-body">
                       <h3 class="h5 card-title card__title-color">Proyecto de accesibilidad 3</h3>
                       <p class="card-text card__text-color">Instituto Nacional de Aprendisaje</p>
@@ -521,13 +502,21 @@
     </div>
   </footer>
 
-  <div class="scroll-top" id="scroll-top">
-    <div class="subir d-flex justify-content-center align-items-center" id="subir">
-      <a href="#header" class="btn subir__btn align-middle" id="subir__btn"><span class="icon-arrow-up"></span>
-        <p class="subir__p text-center"><small>Subir</small></p>
-      </a>
-    </div>
-  </div>
+  <a class="telegram boton-flotante" id="telegram" href="https://t.me/manuelgaitancr" target="_blank" rel="noreferrer">
+    <span class="icon-telegram"></span>
+    <p class="sr-only">Telegram</p>
+  </a>
+
+  <a class="whatsapp boton-flotante" id="whatsapp" href="https://api.whatsapp.com/send?phone=50688810274"
+    target="_blank" rel="noreferrer">
+    <span class="icon-whatsapp"></span>
+    <p class="sr-only">WhatsApp</p>
+  </a>
+
+  <a class="subir boton-flotante" id="subir" href="#header">
+    <span class="icon-arrow-up"></span>
+    <p class="sr-only">Subir</p>
+  </a>
 
   <script defer src="js/jquery-3.5.1.min.js"></script>
   <script defer src="js/bootstrap/js/bootstrap.bundle.min.js"></script>

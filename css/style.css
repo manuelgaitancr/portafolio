@@ -60,10 +60,6 @@ a:hover {
   border-bottom: 2px solid var(--btn-bg-color);
 }
 
-.list__nivel-two {
-  list-style: none;
-}
-
 .cookie-policy__link,
 .terms-and-conditions__link {
   color: #014ea0;
@@ -147,7 +143,6 @@ textarea:focus {
 }
 
 .hero {
-  /* background-image: url("../assets/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg"); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -206,20 +201,6 @@ textarea:focus {
   opacity: 0;
 }
 
-.section-nav {
-  position: fixed;
-  right: 7px;
-  bottom: 396px;
-  border-left: 1px solid rgba(0, 0, 0, .1) !important;
-}
-
-.nav-pills .nav-link.active {
-  background-color: initial;
-  border: initial;
-  color: rgba(0, 0, 0, .7) !important;
-  font-weight: 400;
-}
-
 .hechos-al-azar__content,
 .portafolio {
   background-color: #dad8d6;
@@ -270,52 +251,72 @@ textarea:focus {
   min-width: fit-content;
 }
 
-.icon-arrow-up {
-  color: #68CD73;
-}
-
 #mic-init-access-tool .mic-access-tool-general-button {
   box-shadow: 0px 2px 5px -1px black;
 }
 
-.subir {
+.boton-flotante {
   position: fixed;
-  z-index: 9999;
-  display: block;
-  bottom: 80px;
   right: 7px;
-}
-
-.subir__policy-and-terms {
-  bottom: 7px;
-}
-
-.subir__btn {
-  background-color: #17384c;
+  width: 50px;
+  height: 50px;
   border: 2px solid white;
   border-radius: 50%;
-  padding: 5px;
-  color: white;
   box-shadow: 0px 2px 5px -1px black;
-}
-
-.subir,
-.subir__btn {
-  width: 68px;
-  height: 68px;
-}
-
-.subir__btn:hover,
-.subir__btn:focus {
-  background-color: #FFFCCC;
-  border: 2px solid #8B221A;
-  color: #8B221A !important;
-}
-
-.scroll-top,
-.section-nav {
   display: none;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: ease-in-out;
 }
+
+a.subir {
+  bottom: 80px;
+  background-color: #17384c;
+  color: #68CD73;
+}
+
+a.subir:hover,
+a.subir:focus,
+a.subir:active,
+a.subir:link {
+  background-color: #FFFCCC;
+  color: #68CD73;
+  border: 2px solid #8B221A;
+}
+
+a.whatsapp {
+  bottom: 140px;
+  background-color: #77E879;
+  font-size: 30px;
+  color: white;
+}
+
+a.whatsapp:hover,
+a.whatsapp:focus,
+a.whatsapp:active {
+  background-color: #5cbfa6;
+}
+
+a.telegram {
+  bottom: 200px;
+  background-color: white;
+  font-size: 46px;
+  color: #40A4E2;
+}
+
+a.telegram:hover,
+a.telegram:focus,
+a.telegram:active {
+  color: #39434E;
+}
+
+a.subir:link,
+a.whatsapp:link,
+a.telegram {
+  text-decoration: none;
+}
+
+
 
 @keyframes entrar {
   from {
@@ -490,20 +491,6 @@ textarea:focus {
 @media(min-width: 425px) {
   .hero {
     background-image: url('../assets/img/hero-mobile-l.jpg');
-  }
-}
-
-@media(min-width: 320px) and (max-width: 767.98px) {
-
-  .subir,
-  .subir__btn {
-    width: 48px;
-    height: 48px;
-    padding: 1px;
-  }
-
-  .subir__p {
-    font-size: 10px !important;
   }
 }
 
