@@ -4,17 +4,17 @@ function hideButton() {
     $('#telegram').slideDown(100);
     document.getElementById("telegram").removeAttribute("style");
     document.getElementById("telegram").setAttribute("style", "display: flex");
-    document.getElementById("telegram").classList.add("entrar-derecha", "duracion-1s");
+    document.getElementById("telegram").classList.add("entrar-derecha", "duracion-400ms");
 
     $('#whatsapp').slideDown(100);
     document.getElementById("whatsapp").removeAttribute("style");
     document.getElementById("whatsapp").setAttribute("style", "display: flex");
-    document.getElementById("whatsapp").classList.add("entrar-derecha", "duracion-2s");
+    document.getElementById("whatsapp").classList.add("entrar-derecha", "duracion-600ms");
 
     $('#subir').slideDown(100);
     document.getElementById("subir").removeAttribute("style");
     document.getElementById("subir").setAttribute("style", "display: flex");
-    document.getElementById("subir").classList.add("entrar-derecha", "duracion-3s");
+    document.getElementById("subir").classList.add("entrar-derecha", "duracion-800ms");
   } else {
     $('#telegram').slideUp(100);
     $('#whatsapp').slideUp(100);
@@ -38,12 +38,12 @@ function datosAnimar(id, altura, clase1, clase2, clase3) {
 }
 
 function animar() {
-  datosAnimar("sobre-mi__img", 600, "entrar-derecha", "duracion-1s");
-  datosAnimar("hechos-al-azar__img", 575, "entrar-izquierda", "duracion-1s");
-  datosAnimar("mis-habilidades__content", 550, "entrar-izquierda", "duracion-1s");
-  datosAnimar("portafolio__content", 525, "entrar-abajo", "duracion-1s");
-  datosAnimar("form-content", 500, "entrar-derecha", "duracion-1s");
-  datosAnimar("footer", 475, "entrar-abajo", "duracion-1s");
+  datosAnimar("sobre-mi__img", 600, "entrar-derecha", "duracion-700ms");
+  datosAnimar("hechos-al-azar__img", 575, "entrar-izquierda", "duracion-700ms");
+  datosAnimar("mis-habilidades__content", 550, "entrar-izquierda", "duracion-700ms");
+  datosAnimar("portafolio__content", 525, "entrar-abajo", "duracion-700ms");
+  datosAnimar("form-content", 700, "entrar-derecha", "duracion-700ms");
+  datosAnimar("footer", 475, "entrar-abajo", "duracion-700ms");
 }
 
 // Agregar desplazamiento suave a todos los links dependiendo del navegador

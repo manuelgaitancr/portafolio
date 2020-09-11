@@ -277,7 +277,6 @@ a.subir {
 
 a.subir:hover,
 a.subir:focus,
-a.subir:active,
 a.subir:link {
   background-color: #FFFCCC;
   color: #68CD73;
@@ -292,8 +291,7 @@ a.whatsapp {
 }
 
 a.whatsapp:hover,
-a.whatsapp:focus,
-a.whatsapp:active {
+a.whatsapp:focus {
   background-color: #5cbfa6;
 }
 
@@ -305,8 +303,7 @@ a.telegram {
 }
 
 a.telegram:hover,
-a.telegram:focus,
-a.telegram:active {
+a.telegram:focus {
   color: #39434E;
 }
 
@@ -434,6 +431,42 @@ a.telegram {
 .salir-arriba,
 .entrar-abajo {
   animation-fill-mode: both;
+}
+
+.duracion-100ms {
+  animation-duration: 100ms;
+}
+
+.duracion-200ms {
+  animation-duration: 200ms;
+}
+
+.duracion-300ms {
+  animation-duration: 300ms;
+}
+
+.duracion-400ms {
+  animation-duration: 400ms;
+}
+
+.duracion-500ms {
+  animation-duration: 500ms;
+}
+
+.duracion-600ms {
+  animation-duration: 600ms;
+}
+
+.duracion-700ms {
+  animation-duration: 700ms;
+}
+
+.duracion-800ms {
+  animation-duration: 800ms;
+}
+
+.duracion-900ms {
+  animation-duration: 900ms;
 }
 
 .duracion-1s {
