@@ -255,7 +255,7 @@ textarea:focus {
   box-shadow: 0px 2px 5px -1px black;
 }
 
-.boton-flotante {
+a.boton-flotante {
   position: fixed;
   right: 7px;
   width: 50px;
@@ -263,6 +263,7 @@ textarea:focus {
   border: 2px solid white;
   border-radius: 50%;
   box-shadow: 0px 2px 5px -1px black;
+  text-decoration: none;
   display: none;
   justify-content: center;
   align-items: center;
