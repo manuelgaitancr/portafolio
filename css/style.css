@@ -276,8 +276,7 @@ a.subir {
 }
 
 a.subir:hover,
-a.subir:focus,
-a.subir:link {
+a.subir:focus {
   background-color: #FFFCCC;
   color: #68CD73;
   border: 2px solid #8B221A;
@@ -306,14 +305,6 @@ a.telegram:hover,
 a.telegram:focus {
   color: #39434E;
 }
-
-a.subir:link,
-a.whatsapp:link,
-a.telegram {
-  text-decoration: none;
-}
-
-
 
 @keyframes entrar {
   from {
