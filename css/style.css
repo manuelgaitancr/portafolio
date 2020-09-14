@@ -365,6 +365,16 @@ a.telegram:focus {
   }
 }
 
+@keyframes salir {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes salir-arriba {
   from {
     opacity: 0;
@@ -377,13 +387,15 @@ a.telegram:focus {
   }
 }
 
-@keyframes salir {
+@keyframes salir-derecha {
   from {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 
   to {
     opacity: 0;
+    transform: translate3d(100%, 0, 0);
   }
 }
 
@@ -411,17 +423,22 @@ a.telegram:focus {
   animation-name: salir;
 }
 
+.salir-derecha {
+  animation-name: salir-derecha;
+}
+
 .salir-arriba {
   animation-name: salir-arriba;
 }
 
 .entrar,
 .entrar-arriba,
+.entrar-abajo,
 .entrar-izquierda,
 .entrar-derecha,
 .salir,
 .salir-arriba,
-.entrar-abajo {
+.salir-derecha {
   animation-fill-mode: both;
 }
 
