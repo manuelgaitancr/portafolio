@@ -276,6 +276,10 @@ a.subir {
   color: #68CD73;
 }
 
+a.subir__policy-and-terms {
+  bottom: 7px;
+}
+
 a.subir:hover,
 a.subir:focus {
   background-color: #FFFCCC;
@@ -290,6 +294,10 @@ a.whatsapp {
   color: white;
 }
 
+a.whatsapp__policy-and-terms {
+  bottom: 67px;
+}
+
 a.whatsapp:hover,
 a.whatsapp:focus {
   background-color: #5cbfa6;
@@ -300,6 +308,10 @@ a.telegram {
   background-color: white;
   font-size: 46px;
   color: #40A4E2;
+}
+
+a.telegram__policy-and-terms {
+  bottom: 127px;
 }
 
 a.telegram:hover,
