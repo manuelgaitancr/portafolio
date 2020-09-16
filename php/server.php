@@ -152,7 +152,7 @@ if ($points == 6) {
                         <br/>
                         <label><b>Correo electrónico:</b></label> <p>$email</p>
                         <br/>
-                        <label><b>Nombre Cliente:</b></label> <p><i>$message</i></p>
+                        <label><b>Mensaje Cliente:</b></label> <p><i>$message</i></p>
                       </main>
                       <footer>
                         <div>
