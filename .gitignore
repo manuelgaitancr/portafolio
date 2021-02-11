@@ -3,3 +3,12 @@ php/*.php
 
 # google validator
 google6ad6ad0d6dadf67d.html
+
+#Robots
+robots.txt
+
+#Site Map
+sitemap.xml
+
+#Htacces
+.htaccess
